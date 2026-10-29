@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b14">
+  <title>ĐSG SHOP VIP PRO MAX</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0b14;
+      color: #fff;
+    }
+    header {
+      padding: 18px;
+      background: #151525;
+      border-bottom: 1px solid #302b49;
+      position: sticky;
+      top: 0;
+    }
+    nav {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #c19aff;
+    }
+    nav a, a { text-decoration: none; }
+    nav div a {
+      color: #ddd;
+      margin: 0 7px;
+      font-size: 14px;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 18px;
+      background: radial-gradient(ellipse at top, #38205d, #0b0b14 70%);
+    }
+    .hero h1 {
+      font-size: clamp(34px, 8vw, 60px);
+      margin: 20px 0;
+    }
+    .gradient {
+      background: linear-gradient(90deg, #a56bff, #ff60b7);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      color: #c1bfd4;
+      line-height: 1.8;
+    }
+    .btn {
+      display: inline-block;
+      padding: 13px 20px;
+      margin: 6px;
+      border-radius: 10px;
+      color: white;
+      background: linear-gradient(90deg, #8b5cf6, #ec4899);
+      font-weight: bold;
+    }
+    section { padding: 55px 18px; }
+    .container { max-width: 1000px; margin: auto; }
+    .heading { text-align: center; margin-bottom: 30px; }
+    .heading p { color: #aaa8c3; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      padding: 24px;
+      border-radius: 16px;
+      background: #151525;
+      border: 1px solid #302b49;
+    }
+    .card .icon { font-size: 35px; }
+    .card h3 { margin-bottom: 8px; }
+    .card p { color: #b8b5cc; line-height: 1.7; }
+    .price { color: #d3b5ff; font-weight: bold; }
+    .contact {
+      max-width: 650px;
+      margin: auto;
+      text-align: center;
+      background: #151525;
+      border: 1px solid #302b49;
+      border-radius: 18px;
+      padding: 28px;
+    }
+    .contact p { color: #bbb8d0; line-height: 1.8; }
+    footer {
+      text-align: center;
+      padding: 25px 15px;
+      color: #aaa8c3;
+      border-top: 1px solid #302b49;
+      font-size: 13px;
+    }
+    @media (max-width: 520px) {
+      nav { justify-content: center; }
+      nav div { text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">ĐSG SHOP</div>
+      <div>
+        <a href="#home">Trang chủ</a>
+        <a href="#services">Dịch vụ</a>
+        <a href="#contact">Liên hệ</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <p>✦ CHÀO MỪNG BẠN ĐẾN VỚI ĐSG ✦</p>
+      <h1>ĐSG SHOP<br><span class="gradient">VIP PRO MAX</span></h1>
+      <p>
+        Dịch vụ hỗ trợ mạng xã hội với giao diện hiện đại,
+        dễ sử dụng trên điện thoại và máy tính.
+      </p>
+      <a class="btn" href="#services">Xem dịch vụ</a>
+      <a class="btn" href="#contact">Liên hệ ngay</a>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="heading">
+          <h2>DỊCH VỤ CỦA CHÚNG TÔI</h2>
+          <p>Chọn nền tảng bạn quan tâm để tìm hiểu thêm.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <div class="icon">📘</div>
+            <h3>Facebook</h3>
+            <p>Thông tin dịch vụ hỗ trợ trang cá nhân và fanpage.</p>
+            <div class="price">Liên hệ báo giá</div>
+          </article>
+          <article class="card">
+            <div class="icon">🎵</div>
+            <h3>TikTok</h3>
+            <p>Thông tin dịch vụ hỗ trợ nội dung và kênh TikTok.</p>
+            <div class="price">Liên hệ báo giá</div>
+          </article>
+          <article class="card">
+            <div class="icon">▶️</div>
+            <h3>YouTube</h3>
+            <p>Thông tin dịch vụ hỗ trợ phát triển kênh video.</p>
+            <div class="price">Liên hệ báo giá</div>
+          </article>
+          <article class="card">
+            <div class="icon">📸</div>
+            <h3>Instagram</h3>
+            <p>Thông tin dịch vụ hỗ trợ hồ sơ và nội dung Instagram.</p>
+            <div class="price">Liên hệ báo giá</div>
+          </article>
+          <article class="card">
+            <div class="icon">✈️</div>
+            <h3>Telegram</h3>
+            <p>Thông tin dịch vụ hỗ trợ cộng đồng Telegram.</p>
+            <div class="price">Liên hệ báo giá</div>
+          </article>
+          <article class="card">
+            <div class="icon">🛡️</div>
+            <h3>Hỗ trợ khách hàng</h3>
+            <p>Liên hệ để được tư vấn và giải đáp thắc mắc.</p>
+            <div class="price">Hỗ trợ trực tiếp</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="heading">
+          <h2>TẠI SAO CHỌN ĐSG?</h2>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <div class="icon">⚡</div>
+            <h3>Giao diện nhanh</h3>
+            <p>Thiết kế gọn nhẹ, tối ưu cho thiết bị di động.</p>
+          </article>
+          <article class="card">
+            <div class="icon">📱</div>
+            <h3>Dễ sử dụng</h3>
+            <p>Điều hướng đơn giản, nội dung dễ tìm kiếm.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🤝</div>
+            <h3>Tư vấn rõ ràng</h3>
+            <p>Trao đổi trước khi lựa chọn dịch vụ phù hợp.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <h2>LIÊN HỆ ĐSG SHOP</h2>
+        <p>
+          Bạn muốn tìm hiểu dịch vụ hoặc nhận báo giá?
+          Hãy liên hệ với chúng tôi qua kênh chính thức của bạn.
+        </p>
+        <p><strong>Chủ shop:</strong> ĐSG</p>
+        <p><strong>Thông tin liên hệ:</strong> Cập nhật sau</p>
+        <a class="btn" href="#home">Về đầu trang</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> ĐSG SHOP VIP PRO MAX. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
